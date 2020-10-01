@@ -8,7 +8,7 @@ Paddle::Paddle(SDL_Surface* bmp, int x, int y, int width, int height, int ySpeed
     rect.h = height;
 
     picture = bmp;
-    ySpeed = ySpeed;
+    paddleSpeed = ySpeed;
 }
 
 Paddle::~Paddle()
@@ -19,12 +19,12 @@ Paddle::~Paddle()
 // Add vSpeed to whatever the y coord is (going down increases coord)
 void Paddle::moveUp()
 {
-    rect.y -= ySpeed;
+    rect.y -= paddleSpeed;
 }
 
 void Paddle::moveDown()
 {
-    rect.y += ySpeed;
+    rect.y += paddleSpeed;
 }
 
 void Paddle::display()

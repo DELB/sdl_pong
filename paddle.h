@@ -8,7 +8,7 @@ class Paddle
   SDL_Rect rect;
   SDL_Surface* picture;
 
-  int ySpeed;
+  int paddleSpeed;
   public:
   Paddle(SDL_Surface* bmp, int x, int y, int width, int height, int ySpeed);
   ~Paddle();

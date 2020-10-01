@@ -69,19 +69,19 @@ int main( int argc, char *argv[] )
 
         if (state[SDLK_w])
         {
-            firstPlayer.moveDown();
+            firstPlayer.moveUp();
         }
         if (state[SDLK_s])
         {
-            firstPlayer.moveUp();
+            firstPlayer.moveDown();
         }
         if (state[SDLK_UP])
         {
-            secondPlayer.moveDown();
+            secondPlayer.moveUp();
         }
         if (state[SDLK_DOWN])
         {
-            secondPlayer.moveUp();
+            secondPlayer.moveDown();
         }
 
         ball.movement();
